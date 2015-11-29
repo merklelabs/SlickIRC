@@ -2,7 +2,7 @@ body {
   position: relative;
   color: white;
   height: 100vh;
-  font-family: Arial, Helvetica, Helvetica Neue;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-y: hidden;
 }
 

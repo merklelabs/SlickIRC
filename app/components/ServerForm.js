@@ -6,7 +6,7 @@ export default class ServerForm extends Component {
   render() {
     return (
       <div>
-        <h2 style={ styles.heading }>Add Server</h2>
+        <h2>Add Server</h2>
         <p>Add an IRC server to get started.</p>
         <form>
           <input type="text" placeholder="Name" />

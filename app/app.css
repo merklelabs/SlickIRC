@@ -2,3 +2,14 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0px;
 }
+
+h2 {
+  font-size: 30px;
+}
+
+input[type=text], input[type=password] {
+  font-size: 15px;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}

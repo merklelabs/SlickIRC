@@ -15,7 +15,7 @@ syncReduxAndRouter(history, store)
 
 render(
   <Provider store={store}>
-    <Router history={history}>
+    <Router>
       {routes}
     </Router>
   </Provider>,

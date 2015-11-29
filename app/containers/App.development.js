@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div>
         <ServerList />
-        <div style={[ styles.body ]}>
+        <div style={ styles.body }>
           {this.props.children}
         </div>
         <DevTools />

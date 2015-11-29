@@ -2,7 +2,6 @@ import Radium from 'radium'
 import { Link } from 'react-router'
 import React, { Component, PropTypes } from 'react'
 import styles from './ServerList.styles.js'
-import { connect } from 'react-redux'
 
 @Radium
 class ServerList extends Component {
@@ -15,13 +14,10 @@ class ServerList extends Component {
 
 }
 
-@connect()
 @Radium
 class AddButton extends Component {
 
   render() {
-    const { dispatch } = this.props
-
     return <Link to="/servers/new">
       <button style={ styles.addButton }>
         <i className="fa fa-plus fa-2x"></i>

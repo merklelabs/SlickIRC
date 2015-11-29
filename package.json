@@ -23,11 +23,18 @@
     "type": "git",
     "url": "git+https://github.com/chentsulin/electron-react-boilerplate.git"
   },
-  "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
-  },
+  "authors": [
+    {
+      "name": "Tejas Manohar",
+      "email": "me@tejas.io",
+      "url": "http://tejas.io"
+    },
+    {
+      "name": "Ian Macalinao",
+      "email": "me@ian.pw",
+      "url": "http://ian.pw"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/chentsulin/electron-react-boilerplate/issues"

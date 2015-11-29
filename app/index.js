@@ -6,7 +6,6 @@ import createBrowserHistory from 'history/lib/createBrowserHistory'
 import { syncReduxAndRouter } from 'redux-simple-router'
 import routes from './routes'
 import configureStore from './store/configureStore'
-import './app.css'
 
 const store = configureStore()
 const history = createBrowserHistory()

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes} from 'react'
+import React, { Component, PropTypes } from 'react'
+import ServerList from '../components/ServerList'
 
 export default class App extends Component {
   static propTypes = {
@@ -8,7 +9,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {this.props.children}
+        <ServerList />
+        <div className="body">
+          {this.props.children}
+        </div>
       </div>
     )
   }

@@ -1,6 +1,6 @@
 import React, { Component, PropTypes} from 'react'
+import ServerList from '../components/ServerList'
 import DevTools from './DevTools'
-
 
 export default class App extends Component {
   static propTypes = {
@@ -10,7 +10,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {this.props.children}
+        <ServerList />
+        <div className="body">
+          {this.props.children}
+        </div>
         <DevTools />
       </div>
     )

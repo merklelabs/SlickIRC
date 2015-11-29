@@ -1,9 +1,13 @@
+import Radium from 'radium'
 import React, { Component, PropTypes } from 'react'
+import styles from './ServerList.styles.js'
 
+@Radium
 class ServerList extends Component {
 
   render() {
-    return <p>Test</p>
+    return <div style={[ styles.base ]}>
+    </div>
   }
 
 }

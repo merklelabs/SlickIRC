@@ -1,7 +1,11 @@
+import Radium from 'radium'
 import React, { Component, PropTypes } from 'react'
 import ServerList from '../components/ServerList'
 
-export default class App extends Component {
+import styles from './App.styles.js'
+
+@Radium
+class App extends Component {
   static propTypes = {
     children: PropTypes.element.isRequired
   }
@@ -10,7 +14,7 @@ export default class App extends Component {
     return (
       <div>
         <ServerList />
-        <div className="body">
+        <div style={[ styles.body ]}>
           {this.props.children}
         </div>
       </div>
@@ -18,3 +22,4 @@ export default class App extends Component {
   }
 }
 
+export default App

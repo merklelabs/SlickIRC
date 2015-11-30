@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import ServerForm from '../components/ServerForm'
 
-export default class AddServerPage extends Component {
+class AddServerPage extends Component {
   render() {
-    return (
+    return <div>
+      <h2>Add Server</h2>
+      <p>Add an IRC server to get started.</p>
       <ServerForm />
-    )
+    </div>
   }
 }
 
+export default AddServerPage

@@ -1,21 +1,30 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router'
+import React, { Component, PropTypes } from 'react'
+import { reduxForm } from 'redux-form'
 import styles from './ServerForm.styles'
 
-export default class ServerForm extends Component {
-  render() {
-    return (
-      <div>
-        <h2>Add Server</h2>
-        <p>Add an IRC server to get started.</p>
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Server address" />
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <input type="submit" value="Add Server" />
-        </form>
-      </div>
-    )
+@reduxForm({
+  form: 'server',
+  fields: ['name', 'address', 'username', 'password']
+})
+class ServerForm extends Component {
+
+  static propTypes = {
+    fields: PropTypes.object.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+    resetForm: PropTypes.func.isRequired
   }
+
+  render() {
+    const { fields: { name, address, username, password }, handleSubmit } = this.props
+    return <form onClick={handleSubmit}>
+      <input type="text" placeholder="Name" {...name} />
+      <input type="text" placeholder="Server address" {...address} />
+      <input type="text" placeholder="Username" {...username} />
+      <input type="password" placeholder="Password" {...password} />
+      <button onClick={handleSubmit}>Add Server</button>
+    </form>
+  }
+
 }
+
+export default ServerForm
